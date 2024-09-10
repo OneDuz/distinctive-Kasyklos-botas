@@ -35,9 +35,6 @@ if __name__ == "__main__":
 screenshot_region = (118, 22, 35, 35)
 
 def take_and_save_screenshot(key):
-    """
-    Takes a screenshot in the defined region and saves it with the name of the key pressed.
-    """
     screenshot = pyautogui.screenshot(region=screenshot_region)
     screenshot_name = f"{key}.png"
     screenshot.save(screenshot_name)
